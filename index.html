@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>My Electron App</title>
+</head>
+<body>
+  <button id="startServer">Start Server</button>
+  <script>
+    document.getElementById('startServer').onclick = function () {
+        const startServer = require(__dirname + '/server.js');
+      startServer();
+    };
+  </script>
+</body>
+</html>
